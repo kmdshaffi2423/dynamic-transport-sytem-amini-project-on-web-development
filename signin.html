@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.forgot-password,
+.create-account {
+  text-align: center;
+}
+
+.create-account a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.create-account a:hover {
+  color: #000;
+}
+nav{
+                background: purple;
+                z-index: 2;
+                border-bottom: 4px solid #eca2ff;
+            }
+            nav img{
+                   size: 200px;
+                   width: 200px;;
+                   height: 44px;
+
+                 }
+            nav ul {
+                display: flex;
+                list-style: none;
+            }
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a{
+    padding-left: 1200px;
+}
+         
+  
+
+            
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+    
+        <img src="DYNAMIC TRANSPORT.png" alt="dynamic transport">
+        <a href="booknow.html"><SPAN style="color: RED;">BOOK NOW</SPAN></a>
+</nav>
+  <div class="container">
+    <form action="login.php" method="POST">
+      <h2>SIGN IN</h2>
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <div class="forgot-password">
+        <a href="forgot_password.php">Forgot Password?</a>
+      </div>
+      <div class="create-account">
+        <a href="driver.html">Create a Customer Account</a><br>
+        <a href="driver.html">Create a Driver Account</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
